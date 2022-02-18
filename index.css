@@ -22,11 +22,22 @@ body {
 }
 
 .sidebar a {
-  padding: 24px 24px 24px 12px;
-  font-size: 25px;
+  padding: 24px 48px 24px 12px;
+  font-size: 1.8rem;
   text-decoration: none;
   color: #cbc5ff;
-  display: block;
+}
+
+.sidebar .header {
+  padding: 24px 48px 24px 12px;
+  font-size: 2rem;
+  text-decoration: none;
+  font-style: italic;
+  color: #cbc5ff;
+}
+
+.sidebar a.active {
+  text-decoration: underline;
 }
 
 .main {
