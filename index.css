@@ -1,6 +1,10 @@
 body {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
     background-color: #202026;
 }
 
@@ -8,17 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
   background-color: #000000;
-  overflow-x: hidden;
-  padding-top: 20px;
-  flex-wrap: nowrap;
-  align-content: flex-start;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 
 .sidebar a {
