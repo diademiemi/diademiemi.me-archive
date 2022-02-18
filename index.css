@@ -16,10 +16,15 @@ body {
 }
 
 .sidebar {
+  transition: transform 0.75s;
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   background-color: #000000;
+}
+
+.sidebar.hidden {
+  transform: translate(-100%, 0);
 }
 
 .sidebar a {
