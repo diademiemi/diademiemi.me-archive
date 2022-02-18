@@ -1,5 +1,11 @@
+@font-face {
+  font-family: Agave;
+  src: url(./agave-nerd-mono.ttf);
+}
+
 body {
     display: flex;
+    font-family: Agave, monospace;
     flex-direction: row;
     width: 100vw;
     height: 100vh;
