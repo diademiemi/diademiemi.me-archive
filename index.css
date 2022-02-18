@@ -75,6 +75,7 @@ body {
 }
 
 .box .bar p {
+  width: 1em;
   padding-left: 0.2em;
   margin: 0;
 }
