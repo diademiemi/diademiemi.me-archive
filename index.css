@@ -25,7 +25,7 @@ body {
   padding: 24px 48px 24px 12px;
   font-size: 1.8rem;
   text-decoration: none;
-  color: #cbc5ff;
+  color: #e6e3fe;
 }
 
 .sidebar .header {
@@ -33,7 +33,7 @@ body {
   font-size: 2rem;
   text-decoration: none;
   font-style: italic;
-  color: #cbc5ff;
+  color: #e6e3fe;
 }
 
 .sidebar a.active {
