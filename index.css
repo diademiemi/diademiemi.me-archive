@@ -75,7 +75,7 @@ body.contracted {
 
 .box .bar {
   font-size: 4rem;
-  width: 120%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   background-color: #101013;
