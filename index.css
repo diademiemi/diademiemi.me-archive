@@ -6,25 +6,26 @@
 }
 
 body {
-    display: flex;
-    font-family: Agave, monospace;
-    flex-direction: row;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-color: #202026;
+  transition: transform 0.75s;
+  display: flex;
+  font-family: Agave, monospace;
+  flex-direction: row;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #202026;
+}
+
+body.contracted {
+  transform: translate(-15.5rem, 0);
 }
 
 .sidebar {
-  transition: transform 0.75s;
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   background-color: #000000;
-}
-
-.sidebar.hidden {
-  transform: translate(-100%, 0);
 }
 
 .sidebar a {
@@ -47,6 +48,7 @@ body {
 }
 
 .box {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -73,6 +75,7 @@ body {
 
 .box .bar {
   font-size: 4rem;
+  width: 120%;
   display: flex;
   flex-direction: column;
   background-color: #101013;

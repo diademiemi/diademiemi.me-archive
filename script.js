@@ -1,6 +1,6 @@
 let button = document.getElementById("collapse")
-let sidebar = document.getElementById("sidebar")
+let body = document.getElementById("body")
 
 button.addEventListener("click", e => {
-    sidebar.classList.toggle("hidden")
+    body.classList.toggle("contracted")
 })
