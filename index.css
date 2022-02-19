@@ -8,12 +8,12 @@
 body {
   transition: transform 0.75s;
   display: flex;
-  font-family: Agave, monospace;
   flex-direction: row;
   min-height: 100vh;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  font-family: Agave, monospace;
   background-color: #202026;
 }
 
@@ -22,24 +22,24 @@ body.contracted {
 }
 
 .sidebar {
-  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
+  font-size: 1.5rem;
   background-color: #000000;
 }
 
 .sidebar a {
-  font-size: 1.5em;
   padding: 2rem 2rem 2rem 1rem;
+  font-size: 1.5em;
   text-decoration: none;
   color: #e6e3fe;
 }
 
 .sidebar .header {
-  font-size: 1.8em;
   padding: 2rem 2rem 2rem 1rem;
-  text-decoration: none;
+  font-size: 1.8em;
   font-style: italic;
+  text-decoration: none;
   color: #e6e3fe;
 }
 
@@ -56,12 +56,12 @@ body.contracted {
 
 .box .main {
   display: flex;
+  padding: 1rem 4rem 3rem 4rem;
   flex-direction: column;
   height: 100vh;
   font-size: 2rem;
-  color: #e6e3fe;
   flex: 1;
-  padding: 1rem 4rem 3rem 4rem;
+  color: #e6e3fe;
 }
 
 .box .main .header {
@@ -75,12 +75,12 @@ body.contracted {
 }
 
 .box .footer {
-  position: sticky;
-  bottom: 0;
-  font-size: 4rem;
-  width: 100vw;
   display: flex;
   flex-direction: column;
+  position: sticky;
+  bottom: 0;
+  width: 100vw;
+  font-size: 4rem;
   background-color: #101013;
   color: #e6e3fe;
 }
