@@ -1,0 +1,83 @@
+@font-face {
+  font-family: Agave;
+  src: url(../agave-nerd-mono.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  transition: transform 0.75s;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: Agave, monospace;
+  background-color: #202026;
+}
+
+body.contracted {
+  transform: translate(var(--hide), 0);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  background-color: #000000;
+}
+
+.sidebar a {
+  padding: 2rem 2rem 2rem 1rem;
+  font-size: 2em;
+  text-decoration: none;
+  color: #e6e3fe;
+}
+
+.sidebar .header {
+  padding: 2rem 2rem 2rem 1rem;
+  font-size: 2.5em;
+  font-style: italic;
+  text-decoration: none;
+  color: #e6e3fe;
+}
+
+.sidebar a.active {
+  text-decoration: underline;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.box .main {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  flex-wrap: wrap;
+  padding: 1rem 4rem 3rem 4rem;
+  height: 100vh;
+  font-size: 2rem;
+  color: #e6e3fe;
+}
+
+.box .footer {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  bottom: 0;
+  width: 100vw;
+  font-size: 4rem;
+  background-color: #101013;
+  color: #e6e3fe;
+}
+
+.box .footer p {
+  width: 1em;
+  padding-left: 0.2em;
+  margin: 0;
+}
