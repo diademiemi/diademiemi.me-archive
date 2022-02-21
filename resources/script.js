@@ -4,9 +4,11 @@ let body = document.getElementById("body")
 
 
 
-if (window.innerHeight > window.innerWidth) {
-    body.style.setProperty("--hide", `calc(-${sidebar.clientWidth}px + 2rem)`)
-    body.classList.add("contracted")
+window.onload = () => {
+    if (window.innerHeight > window.innerWidth) {
+        body.style.setProperty("--hide", `calc(-${sidebar.clientWidth}px + 2rem)`)
+        body.classList.toggle("contracted")
+    }
 }
 
 button.addEventListener("click", e => {
