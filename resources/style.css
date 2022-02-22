@@ -6,7 +6,7 @@
 }
 
 body {
-  transition: transform 0.75s;
+  
   display: flex;
   flex-direction: row;
   min-height: 100vh;
@@ -17,7 +17,16 @@ body {
   background-color: #202026;
 }
 
-body.contracted {
+body .sidebar,
+body .main,
+body .footer {
+  transition: transform 0.75s;
+
+}
+
+body.contracted .sidebar,
+body.contracted .main,
+body.contracted .footer {
   transform: translate(var(--hide), 0);
 }
 
@@ -59,6 +68,7 @@ body.contracted {
   flex-direction: row;
   flex: 1;
   flex-wrap: wrap;
+  max-width: 69rem;
   padding: 1rem 4rem 3rem 4rem;
   height: 100vh;
   font-size: 2rem;
@@ -68,7 +78,7 @@ body.contracted {
 .box .footer {
   display: flex;
   flex-direction: column;
-  position: sticky;
+  position: fixed;
   bottom: 0;
   width: 100vw;
   font-size: 4rem;
