@@ -27,13 +27,9 @@ body.contracted .footer {
   transform: translate(var(--hide), 0);
 }
 
-body .main {
-  width: calc(100vw - 40rem);
-}
-
 body.contracted .main {
+  width: calc(100vw - 10rem);
   transform: translate(var(--hide), 0);
-  width: 100%;
 }
 
 .sidebar {
