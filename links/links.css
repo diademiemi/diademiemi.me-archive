@@ -1,4 +1,4 @@
-.box .link-text {
+.box .main {
   flex: 1;
   max-width: 100rem;
   padding: 1rem 4rem 3rem 4rem;
@@ -6,11 +6,11 @@
   font-size: 2rem;
   color: #e6e3fe;
 }
-.box .link-text .icon {
+.box .main .icon {
   font-size: 4rem;
 }
 
-.box .link-text .icon-text {
+.box .main .icon-text {
   font-size: 2rem;
 }
   

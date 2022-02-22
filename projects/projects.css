@@ -1,4 +1,4 @@
-.box .grid {
+.box .main {
   display: grid;
   flex: 1;
   grid-template-columns: repeat(3, 33%);
@@ -9,7 +9,7 @@
   color: #e6e3fe;
 }
   
-.box .grid .grid-image {
+.box .main .grid-image {
   max-width: 33vh;
 }
   
