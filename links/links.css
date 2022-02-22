@@ -1,0 +1,16 @@
+.box .link-text {
+  flex: 1;
+  max-width: 100rem;
+  padding: 1rem 4rem 3rem 4rem;
+  height: 100vh;
+  font-size: 2rem;
+  color: #e6e3fe;
+}
+.box .link-text .icon {
+  font-size: 4rem;
+}
+
+.box .link-text .icon-text {
+  font-size: 2rem;
+}
+  
