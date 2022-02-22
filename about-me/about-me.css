@@ -1,0 +1,12 @@
+.box .text {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: wrap;
+    max-width: 100rem;
+    padding: 1rem 4rem 3rem 4rem;
+    height: 100vh;
+    font-size: 2rem;
+    color: #e6e3fe;
+  }
+  
