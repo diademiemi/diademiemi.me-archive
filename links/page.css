@@ -1,5 +1,7 @@
 .box .main {
   flex: 1;
+  flex-direction: column;
+  flex-wrap: nowrap;
   max-width: 100rem;
   padding: 1rem 4rem 3rem 4rem;
   height: 100vh;
