@@ -6,7 +6,6 @@
 }
 
 body {
-  
   display: flex;
   flex-direction: row;
   min-height: 100vh;
@@ -21,7 +20,6 @@ body .sidebar,
 body .main,
 body .footer {
   transition: transform 0.75s;
-
 }
 
 body.contracted .sidebar,
