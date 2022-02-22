@@ -31,6 +31,9 @@ body.contracted .footer {
 }
 
 .sidebar {
+  top: 0;
+  position: sticky;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;
