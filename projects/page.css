@@ -4,13 +4,15 @@
   flex: 1;
   flex-wrap: nowrap;
   grid-template-columns: repeat(3, 33%);
-  padding: 1rem 1rem 1rem 1rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
   height: 100vh;
   font-size: 1.5rem;
   color: #e6e3fe;
 }
   
 .box .main .grid-image {
+  padding-left: 1rem;
+  padding-right: 1rem;
   width: 100%;
 }
-  

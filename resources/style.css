@@ -28,7 +28,7 @@ body.contracted .footer {
 }
 
 body.contracted .main {
-  width: calc(90vw);
+  width: calc(98vw);
   transform: translate(var(--hide), 0);
 }
 
