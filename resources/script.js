@@ -12,7 +12,7 @@ button.addEventListener("click", e => {
 
 // The fuckening.
 let soundPlayer;
-let buffer = ["", "", "", "", ""];
+let buffer = ["", "", "", "", "", "", "", ""];
 let tracker = 0;
 
 // The sussy style sheet
@@ -95,16 +95,16 @@ function keyEvent(event) {
             soundPlayer.play();
             styleSheet.innerText = sussyStyle;
             document.head.appendChild(styleSheet);
-            buffer = ["", "", "", "", ""];
+            buffer = ["", "", "", "", "", "", "", ""];
             tracker = 1;
         } else {
             console.log("Sus mode disengaged");
             soundPlayer.pause();
             document.head.removeChild(styleSheet);
-            buffer = ["", "", "", "", ""];
+            buffer = ["", "", "", "", "", "", "", ""];
             tracker = 0;
         }
-    } else if (buffer.join("").includes("skel")) {
+    } else if (buffer.join("").includes("skeleton")) {
         if (tracker !== 2) {
             console.log("THE SKELETON APPEARS");
             soundPlayer.src = skellySong;
@@ -113,13 +113,13 @@ function keyEvent(event) {
             soundPlayer.play();
             styleSheet.innerText = skellyStyle;
             document.head.appendChild(styleSheet);
-            buffer = ["", "", "", "", ""];
+            buffer = ["", "", "", "", "", "", "", ""];
             tracker = 2;
         } else {
             console.log("THE SKELETON DISAPPEARS");
             soundPlayer.pause();
             document.head.removeChild(styleSheet);
-            buffer = ["", "", "", "", ""];
+            buffer = ["", "", "", "", "", "", "", ""];
             tracker = 0;
         }
     }
