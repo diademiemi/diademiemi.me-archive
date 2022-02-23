@@ -44,14 +44,14 @@ body.contracted .main {
 
 .sidebar a {
   padding: 2rem 2rem 2rem 1rem;
-  font-size: 2em;
+  font-size: 1.5em;
   text-decoration: none;
   color: #e6e3fe;
 }
 
 .sidebar .header {
   padding: 2rem 2rem 2rem 1rem;
-  font-size: 2.5em;
+  font-size: 2em;
   font-style: italic;
   text-decoration: none;
   color: #e6e3fe;
@@ -74,7 +74,7 @@ body.contracted .main {
   position: fixed;
   bottom: 0;
   width: 100vw;
-  font-size: 4rem;
+  font-size: 3rem;
   background-color: #101013;
   color: #e6e3fe;
 }
