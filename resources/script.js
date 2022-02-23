@@ -42,6 +42,35 @@ let sussyStyle = `body {
 // The sussy song file
 let sussySong = "../resources/eggs/drip.mp3"
 
+// THE SKELETON APPEARS
+let skellyStyle = `body {
+    background-color: #00000000;
+    background-image: url(../resources/eggs/skeleton.gif);
+    background-position-y: 30%;
+    background-position-x: 80%;
+    background-size: cover;
+}
+
+.sidebar {
+    background-color: #000000;
+}
+
+.sidebar a {
+    color: #ffffff;
+}
+
+.sidebar .header {
+    color: #ffffff;
+}
+
+.box .footer {
+    background-color: #9d330d;
+}`;
+
+// The sussy song file
+let skellySong = "../resources/eggs/skeleton.mp3"
+
+
 /**
  * Create stylesheet
  */
@@ -70,6 +99,24 @@ function keyEvent(event) {
             tracker = 1;
         } else {
             console.log("Sus mode disengaged");
+            soundPlayer.pause();
+            document.head.removeChild(styleSheet);
+            buffer = ["", "", "", "", ""];
+            tracker = 0;
+        }
+    } else if (buffer.join("").includes("skel")) {
+        if (tracker !== 2) {
+            console.log("THE SKELETON APPEARS");
+            soundPlayer.src = skellySong;
+            soundPlayer.loop = true;
+            soundPlayer.load();
+            soundPlayer.play();
+            styleSheet.innerText = skellyStyle;
+            document.head.appendChild(styleSheet);
+            buffer = ["", "", "", "", ""];
+            tracker = 2;
+        } else {
+            console.log("THE SKELETON DISAPPEARS");
             soundPlayer.pause();
             document.head.removeChild(styleSheet);
             buffer = ["", "", "", "", ""];
