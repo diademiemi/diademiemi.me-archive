@@ -6,7 +6,7 @@ let body = document.getElementById("body")
  * Sidebar toggle button
  */
 button.addEventListener("click", e => {
-    body.style.setProperty("--hide", `calc(-${sidebar.clientWidth}px + 2rem)`)
+    body.style.setProperty("--hide", `calc(-${sidebar.clientWidth}px + 2vh)`)
     body.classList.toggle("contracted")
 })
 
@@ -88,7 +88,7 @@ function keyEvent(event) {
 window.onload = () => {
     // Check if sidebar should start contracted
     if (window.innerHeight > window.innerWidth) {
-        body.style.setProperty("--hide", `calc(-${sidebar.clientWidth}px + 2rem)`)
+        body.style.setProperty("--hide", `calc(-${sidebar.clientWidth}px + 2vw)`)
         body.classList.toggle("contracted")
     }
     // Init listener
