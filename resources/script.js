@@ -151,7 +151,7 @@ function keyEvent(event) {
             tracker = 0;
         }
     } else if (buffer.join("").includes("vaporeon")) {
-        if (tracker !== 2) {
+        if (tracker !== 3) {
             console.log("Hey guys");
             soundPlayer.pause();
             styleSheet.innerText = vaporeonStyle;
@@ -166,7 +166,7 @@ function keyEvent(event) {
             </div>
             `
             buffer = ["", "", "", "", "", "", "", ""];
-            tracker = 2;
+            tracker = 3;
         } else {
             console.log("come for more fun facts!");
             document.head.removeChild(styleSheet);
